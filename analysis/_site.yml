@@ -22,7 +22,6 @@ navbar:
       - text: "PDF"
         href: article.pdf
 output:
-  # html_document:
   bookdown::html_document2:
     theme: flatly
     number_sections: no
