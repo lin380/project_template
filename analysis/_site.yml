@@ -1,7 +1,7 @@
-name: "my-project"
+name: "project"
 output_dir: "../docs"
 navbar:
-  title: "My Project"
+  title: "Project Title"
   left:
     - text: "Home"
       href: index.html

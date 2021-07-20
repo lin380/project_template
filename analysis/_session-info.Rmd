@@ -1,6 +1,5 @@
-```{r, results='asis'}
-session <- sessioninfo::session_info()
-session$packages %>% 
-  filter(attached == TRUE)
+```{r, echo=FALSE}
+sessioninfo::session_info()$packages %>% 
+  filter(attached == "TRUE")
 ```
 

@@ -3,7 +3,7 @@ title: "Article Title"
 author: "Your Name"
 date: "`r format(Sys.Date(), '%B %d, %Y')`"
 output: 
-  pdf_document: 
+  bookdown::pdf_document2: 
     number_sections: yes
   bookdown::html_document2: 
     number_sections: yes
@@ -22,7 +22,7 @@ abstract: |
 pacman::p_load(citr, magrittr, knitr, ggplot2)
 
 # Configure default options for knitr code chunks
-knitr::opts_chunk$set(fig.width=7, fig.height=5, fig.pos='h', fig.align='center', echo=FALSE, message = FALSE, warning = FALSE)
+knitr::opts_chunk$set(fig.width=6, fig.asp = 0.7, fig.align='center', echo=FALSE, message = FALSE, warning = FALSE)
 ```
 
 # Introduction

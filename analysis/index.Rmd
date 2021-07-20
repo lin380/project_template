@@ -1,18 +1,17 @@
 ---
-title: "Project Name"
+title: "Project Title"
 date: "`r Sys.Date()`"
 bibliography: references.bib
 biblio-style: apalike
 ---
 
-## Project 
+## Project title
 
 <!-- Add overview of the project here. -->
 
 ### Research area and problem
 
 ### Research aim and question
-
 
 ## Reproduce
 
@@ -21,7 +20,8 @@ biblio-style: apalike
 
 <details><summary>View session information</summary>
 
-```{r, child="_session-info.Rmd"}
+```{r}
+sessioninfo::session_info()
 ```
 
 </details>

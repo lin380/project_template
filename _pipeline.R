@@ -38,7 +38,7 @@ render_site(input = "analysis/4_analyze_dataset.Rmd")
 # 5. Generate reports
 
 render_site(input = "analysis/5_generate_article.Rmd")
-render(input = "analysis/5_generate_article.Rmd", output_format = "pdf_document", output_file = "article.pdf")
+render(input = "analysis/5_generate_article.Rmd", output_format = "bookdown::pdf_document2", output_file = "article.pdf")
 
 # Create index: main website splash page
 
