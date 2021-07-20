@@ -15,7 +15,7 @@ if (!require("pacman", character.only = TRUE)) {
   library("pacman", character.only = TRUE)
 }
 
-pacman::p_load(tidyverse, rmarkdown, knitr, sessioninfo)
+pacman::p_load(citr, tidyverse, rmarkdown, knitr, sessioninfo)
 
 # RUN ---------------------------------------------------------------------
 
