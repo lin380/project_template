@@ -8,7 +8,7 @@ output:
   bookdown::html_document2: 
     number_sections: yes
     code_folding: hide
-bibliography: biblio.bib
+bibliography: references.bib
 biblio-style: apalike
 abstract: | 
   This is the abstract to this project. It will cover the main points that summarize the area of study, the research question to be explored, the motivation to study this area, the hypothesis to be tested or explored, and a concise description of the findings and their contribution to the area of study. An abstract should generally be no shorter than 100 words and no longer than 300 words.

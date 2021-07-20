@@ -1,18 +1,33 @@
 ---
 title: "Project Name"
 date: "`r Sys.Date()`"
+bibliography: references.bib
+biblio-style: apalike
 ---
 
 ## Project 
 
 <!-- Add overview of the project here. -->
 
-## Overview
+### Research area and problem
+
+### Research aim and question
 
 
 ## Reproduce
 
 
+### Session
+
+<details><summary>View session information</summary>
+
 ```{r, child="_session-info.Rmd"}
 ```
 
+</details>
+
+```{r cleanup, echo=FALSE}
+rm(list = ls()) # clean working environment
+```
+
+## References
