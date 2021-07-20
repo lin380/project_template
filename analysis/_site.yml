@@ -1,0 +1,36 @@
+name: "my-project"
+output_dir: "../docs"
+navbar:
+  title: "My Project"
+  left:
+    - text: "Home"
+      href: index.html
+    - text: "Analysis"
+      menu:
+      - text: "Acquire data"
+        href: 1_acquire_data.html
+      - text: "Curate dataset"
+        href: 2_curate_dataset.html
+      - text: "Transform dataset"
+        href: 3_transform_dataset.html
+      - text: "Analyze dataset"
+        href: 4_analyze_dataset.html
+    - text: "Article"
+      menu:
+      - text: "Web"
+        href: 5_generate_article.html
+      - text: "PDF"
+        href: article.pdf
+output:
+  # html_document:
+  bookdown::html_document2:
+    theme: flatly
+    number_sections: no
+    toc: true
+    toc_depth: 3
+    toc_float:
+      collapsed: false
+    code_folding: show
+    highlight: tango
+    df_print: paged
+

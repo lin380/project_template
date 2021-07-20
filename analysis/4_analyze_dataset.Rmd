@@ -1,0 +1,48 @@
+---
+title: "Analyze dataset"
+date: "`r Sys.Date()`"
+bibliography: biblio.bib
+biblio-style: apalike
+---
+
+## About
+
+### Description
+
+<!-- The aim of this script -->
+
+### Usage
+
+<!-- How to run this script: what input it requires and output produced -->
+
+## Setup
+
+```{r setup}
+# Script-specific options or packages
+
+```
+
+## Run
+
+<!-- Steps involved in analyzing the data -->
+
+## Finalize
+
+### Log
+
+<!-- Any description that will be helpful to understand the results of this script and how it contributes to the aims of the project -->
+
+### Session
+
+<details><summary>View session information</summary>
+
+```{r, child="_session-info.Rmd"}
+```
+
+</details>
+
+```{r cleanup, echo=FALSE}
+rm(list = ls()) # clean working environment
+```
+
+## References

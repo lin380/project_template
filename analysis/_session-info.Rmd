@@ -1,0 +1,6 @@
+```{r, results='asis'}
+session <- sessioninfo::session_info()
+session$packages %>% 
+  filter(attached == TRUE)
+```
+

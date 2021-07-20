@@ -1,0 +1,87 @@
+---
+title: "Article Title"
+author: "Your Name"
+date: "`r format(Sys.Date(), '%B %d, %Y')`"
+output: 
+  pdf_document: 
+    number_sections: yes
+  bookdown::html_document2: 
+    number_sections: yes
+    code_folding: hide
+bibliography: biblio.bib
+biblio-style: apalike
+abstract: | 
+  This is the abstract to this project. It will cover the main points that summarize the area of study, the research question to be explored, the motivation to study this area, the hypothesis to be tested or explored, and a concise description of the findings and their contribution to the area of study. An abstract should generally be no shorter than 100 words and no longer than 300 words.
+---
+
+
+```{r setup, include=FALSE}
+# Include options and packages required to generate this report
+
+# Install/Load packages
+pacman::p_load(citr, magrittr, knitr, ggplot2)
+
+# Configure default options for knitr code chunks
+knitr::opts_chunk$set(fig.width=7, fig.height=5, fig.pos='h', fig.align='center', echo=FALSE, message = FALSE, warning = FALSE)
+```
+
+# Introduction
+
+<!-- the identification of a relevant topic/ area of interest to you, -->
+
+Response goes here...
+
+## Background
+
+<!-- a description a viable and thought-provoking research question supported by previous research on the topic in the primary literature, -->
+
+Response goes here...
+
+## Hypothesis
+
+<!-- a clear, and testable hypothesis based on evidence in the literature, -->
+
+Response goes here...
+
+# Methods
+
+Data gathering, manipulation, and statistical analysis were conducted with the R Statistical Software [@r2016software]. 
+
+## Data source
+
+<!-- the identification of an adequate corpus resource (existing or to be developed) to address the research question;  evaluating the strengths and weakness of this particular resource, -->
+
+Response goes here...
+
+## Statistical approach
+
+<!-- reference to and use of the appropriate analytical and/or statistical methods to assess the evidence, -->
+
+Response goes here...
+
+# Results
+
+Here is example code for a table with a caption in Table \@ref(tab:table1).
+
+```{r table1}
+cars %>% 
+  head %>% 
+  kable(booktabs = TRUE, 
+        caption = "Preview of the `cars` dataset.")
+```
+
+Here is example code for a figure with a caption Figure \@ref(fig:plot1).
+
+```{r plot1, fig.cap="Plot of the `cars` dataset"}
+ggplot(cars, aes(x = dist, y = speed)) + geom_point() + geom_smooth(method = "lm")
+```
+
+# Discussion
+
+<!-- and a review and discussion of the findings -->
+
+Response goes here...
+
+# Conclusion
+
+# References
