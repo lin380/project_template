@@ -40,7 +40,7 @@ render_site(input = "analysis/4_analyze_dataset.Rmd")
 render_site(input = "analysis/5_generate_article.Rmd")
 render(input = "analysis/5_generate_article.Rmd", output_format = "pdf_document", output_file = "article.pdf")
 
-# Create index
+# Create index: main website splash page
 
 render_site(input = "analysis/index.Rmd")
 
