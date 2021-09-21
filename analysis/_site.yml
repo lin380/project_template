@@ -21,6 +21,9 @@ navbar:
         href: 5_generate_article.html
       - text: "PDF"
         href: article.pdf
+  right:
+    - icon: fa-github fa-lg
+      href: https://github.com # add directory to GitHub repository
 output:
   bookdown::html_document2:
     theme: flatly
